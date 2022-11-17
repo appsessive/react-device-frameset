@@ -39,7 +39,7 @@ export const DeviceFrameset = React.memo<DeviceFramesetProps>(
                 {device === 'Galaxy Note 8' ? <div className="overflow">
                     <div className="shadow" />
                 </div> : null}
-                {device === 'iPhone X' ? <div className="notch">
+                {device === 'iPhone XR' || device === 'iPhone 12 Pro' ? <div className="notch">
                     <div className="camera" />
                     <div className="speaker" />
                 </div> : null}
@@ -52,7 +52,7 @@ export const DeviceFrameset = React.memo<DeviceFramesetProps>(
                 <div className="speaker" />
                 <div className="sensors" />
                 <div className="more-sensors" />
-                {device === 'iPhone X' ? <div className="overflow">
+                {device === 'iPhone XR' || device === 'iPhone 12 Pro' ? <div className="overflow">
                     <div className="shadow shadow--tr"></div>
                     <div className="shadow shadow--tl"></div>
                     <div className="shadow shadow--br"></div>
