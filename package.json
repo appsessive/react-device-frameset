@@ -1,5 +1,6 @@
 {
   "author": "Zheeeng <hi@zheeeng.me>",
+  "version": "0.0.1",
   "private": false,
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
