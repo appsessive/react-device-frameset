@@ -1,5 +1,6 @@
 {
   "author": "Zheeeng <hi@zheeeng.me>",
+  "name": "react-device-frameset",
   "version": "0.0.1",
   "private": false,
   "scripts": {
