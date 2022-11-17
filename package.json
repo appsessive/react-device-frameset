@@ -1,6 +1,6 @@
 {
   "author": "Maciej, fork of a react-device-frameset created by Zheeeng <hi@zheeeng.me>",
-  "name": "appsessive-react-device-frameset",
+  "name": "react-device-frameset",
   "version": "0.0.1",
   "private": false,
   "scripts": {
