@@ -5,6 +5,7 @@
   flex-direction: column;
   overflow: hidden;
 }
+
 .device-emulator section {
   flex-shrink: 0;
   display: flex;
@@ -16,6 +17,7 @@
   padding-bottom: 24px;
   box-sizing: content-box;
 }
+
 .device-emulator select, .device-emulator input {
   outline: none;
   border: none;
@@ -23,19 +25,23 @@
   padding: 8px;
   border-radius: 4px;
 }
+
 .device-emulator select {
   margin-right: 16px;
   padding-right: 16px;
 }
+
 .device-emulator input {
   width: 48px;
   height: 32px;
   margin-right: 8px;
 }
+
 .device-emulator span {
   margin-right: 8px;
 }
-.device-emulator input[type=checkbox] {
+
+.device-emulator input[type="checkbox"] {
   margin-left: 16px;
 }
 
