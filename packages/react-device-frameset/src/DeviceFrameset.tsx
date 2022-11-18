@@ -36,7 +36,7 @@ export const DeviceFrameset = React.memo<DeviceFramesetProps>(
                 style={style}
             >
                 <div className="inner" />
-                {device === 'Galaxy Note 8' ? <div className="overflow">
+                {device === 'Samsung Galaxy S20 Ultra' ? <div className="overflow">
                     <div className="shadow" />
                 </div> : null}
                 {device === 'iPhone XR' || device === 'iPhone 12 Pro' ? <div className="notch">

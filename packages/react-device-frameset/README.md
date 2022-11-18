@@ -30,9 +30,17 @@ yarn add react-device-frameset (or npm/pnpm)
 
 ## Usage
 
+### Stylesheet importing
+
+`react-device-frameset` supports [conditional exports](https://nodejs.org/api/packages.html#conditional-exports).
+
+If the application bundler supports this feature and above node v12.11.0, you can import the stylesheet through the recommended path `react-device-frameset/styles`, it is largely supported in real developing environments, otherwise, you need to import it from `react-device-frameset/dist/styles`.
+
+### Basic Example
+
 ```tsx
 import { DeviceFrameset } from 'react-device-frameset'
-import 'react-device-frameset/lib/css/marvel-devices.min.css'
+import 'react-device-frameset/styles/marvel-devices.min.css'
 
 export const App = () => {
     return (
@@ -48,19 +56,20 @@ export const App = () => {
 DeviceFramesetProps:
 
 ```ts (signature)
-| { device: 'iPhone X', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'iPhone 8', color: 'black' | 'silver' | 'gold', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'iPhone 8 Plus', color: 'black' | 'silver' | 'gold', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'iPhone 5s', color: 'black' | 'silver' | 'gold', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'iPhone 5c', color: 'white' | 'red' | 'yellow' | 'green' | 'blue', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'iPhone 4s', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'Galaxy Note 8', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'Nexus 5', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'Lumia 920', color: 'black' | 'white' | 'yellow' | 'red' | 'blue', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'Samsung Galaxy S5', color: 'white' | 'black', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'HTC One', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Nest Hub Max', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Nest Hub', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Samsung Galaxy A51/71', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Galaxy Fold', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Surface Duo', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Surface Pro 7', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
 | { device: 'iPad Mini', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
-| { device: 'MacBook Pro', width?: number, height?: number, zoom?: number }
+| { device: 'iPad Air', color: 'black' | 'silver', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Samsung Galaxy S20 Ultra', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Samsung Galaxy S8+', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'Pixel 5', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'iPhone 12 Pro', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'iPhone XR', landscape?: boolean, width?: number, height?: number, zoom?: number }
+| { device: 'iPhone SE', landscape?: boolean, width?: number, height?: number, zoom?: number }
 ```
 
 ## If you like the frameset selector?
@@ -78,8 +87,8 @@ type DeviceEmulatorProps = {
 
 ```tsx
 import { DeviceFrameset, DeviceSelector } from 'react-device-frameset'
-import 'react-device-frameset/lib/css/marvel-devices.min.css'
-import 'react-device-frameset/lib/css/device-selector.min.css'
+import 'react-device-frameset/styles/marvel-devices.min.css'
+import 'react-device-frameset/styles/device-selector.min.css'
 
 export const App = () => {
     return (
@@ -105,8 +114,8 @@ type DeviceEmulatorProps = {
 
 ```tsx
 import { DeviceFrameset, DeviceEmulator } from 'react-device-frameset'
-import 'react-device-frameset/lib/css/marvel-devices.min.css'
-import 'react-device-frameset/lib/css/device-emulator.min.css'
+import 'react-device-frameset/styles/marvel-devices.min.css'
+import 'react-device-frameset/styles/device-emulator.min.css'
 
 export const App = () => {
     return (
