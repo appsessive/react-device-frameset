@@ -1,7 +1,7 @@
 {
   "name": "react-device-frameset",
   "version": "0.0.6",
-  "author": "Zheeeng <hi@zheeeng.me>",
+  "author": "Appsessive fork of Zheeeng <hi@zheeeng.me> project",
   "description": "This is yet another device frameset component for React.",
   "keywords": [
     "frameset",
