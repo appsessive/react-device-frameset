@@ -20,42 +20,49 @@ declare type DeviceType<Device extends string, Colors extends readonly string[]>
     height?: number;
 };
 declare const DeviceOptions: {
-    "Nest Hub Max": {
-        device: "ipad";
-        colors: readonly ["black", "silver"];
+    "iPhone SE": {
+        device: "iphone8";
+        colors: readonly [];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Nest Hub": {
-        device: "ipad";
-        colors: readonly ["black", "silver"];
+    "iPhone XR": {
+        device: "iphone-x";
+        colors: readonly [];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Samsung Galaxy A51/71": {
+    "iPhone 12 Pro": {
+        device: "iphone-x";
+        colors: readonly [];
+        hasLandscape: true;
+        width: number;
+        height: number;
+    };
+    "Pixel 5": {
+        device: "nexus5";
+        colors: readonly [];
+        hasLandscape: true;
+        width: number;
+        height: number;
+    };
+    "Samsung Galaxy S8+": {
         device: "note8";
-        colors: readonly ["black", "silver"];
+        colors: readonly [];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Galaxy Fold": {
+    "Samsung Galaxy S20 Ultra": {
         device: "note8";
-        colors: readonly ["black", "silver"];
+        colors: readonly [];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Surface Duo": {
-        device: "ipad";
-        colors: readonly ["black", "silver"];
-        hasLandscape: true;
-        width: number;
-        height: number;
-    };
-    "Surface Pro 7": {
+    "iPad Air": {
         device: "ipad";
         colors: readonly ["black", "silver"];
         hasLandscape: true;
@@ -69,51 +76,44 @@ declare const DeviceOptions: {
         width: number;
         height: number;
     };
-    "iPad Air": {
+    "Surface Pro 7": {
         device: "ipad";
         colors: readonly ["black", "silver"];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Samsung Galaxy S20 Ultra": {
+    "Surface Duo": {
+        device: "ipad";
+        colors: readonly ["black", "silver"];
+        hasLandscape: true;
+        width: number;
+        height: number;
+    };
+    "Galaxy Fold": {
         device: "note8";
-        colors: readonly [];
+        colors: readonly ["black", "silver"];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Samsung Galaxy S8+": {
+    "Samsung Galaxy A51/71": {
         device: "note8";
-        colors: readonly [];
+        colors: readonly ["black", "silver"];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "Pixel 5": {
-        device: "nexus5";
-        colors: readonly [];
+    "Nest Hub": {
+        device: "ipad";
+        colors: readonly ["black", "silver"];
         hasLandscape: true;
         width: number;
         height: number;
     };
-    "iPhone 12 Pro": {
-        device: "iphone-x";
-        colors: readonly [];
-        hasLandscape: true;
-        width: number;
-        height: number;
-    };
-    "iPhone XR": {
-        device: "iphone-x";
-        colors: readonly [];
-        hasLandscape: true;
-        width: number;
-        height: number;
-    };
-    "iPhone SE": {
-        device: "iphone8";
-        colors: readonly [];
+    "Nest Hub Max": {
+        device: "ipad";
+        colors: readonly ["black", "silver"];
         hasLandscape: true;
         width: number;
         height: number;

@@ -36,89 +36,12 @@ import React, { useMemo } from "react";
 // src/DeviceOptions.ts
 var defineDevice = (definition) => definition;
 var DeviceOptions = {
-  ["Nest Hub Max"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 1280,
-    height: 800
-  }),
-  ["Nest Hub"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 1024,
-    height: 600
-  }),
-  ["Samsung Galaxy A51/71"]: defineDevice({
-    device: "note8",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 412,
-    height: 914
-  }),
-  ["Galaxy Fold"]: defineDevice({
-    device: "note8",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 280,
-    height: 653
-  }),
-  ["Surface Duo"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 540,
-    height: 720
-  }),
-  ["Surface Pro 7"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 912,
-    height: 1368
-  }),
-  ["iPad Mini"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 768,
-    height: 1024
-  }),
-  ["iPad Air"]: defineDevice({
-    device: "ipad",
-    colors: ["black", "silver"],
-    hasLandscape: true,
-    width: 820,
-    height: 1180
-  }),
-  ["Samsung Galaxy S20 Ultra"]: defineDevice({
-    device: "note8",
+  ["iPhone SE"]: defineDevice({
+    device: "iphone8",
     colors: [],
     hasLandscape: true,
-    width: 412,
-    height: 915
-  }),
-  ["Samsung Galaxy S8+"]: defineDevice({
-    device: "note8",
-    colors: [],
-    hasLandscape: true,
-    width: 360,
-    height: 740
-  }),
-  ["Pixel 5"]: defineDevice({
-    device: "nexus5",
-    colors: [],
-    hasLandscape: true,
-    width: 393,
-    height: 851
-  }),
-  ["iPhone 12 Pro"]: defineDevice({
-    device: "iphone-x",
-    colors: [],
-    hasLandscape: true,
-    width: 390,
-    height: 844
+    width: 375,
+    height: 667
   }),
   ["iPhone XR"]: defineDevice({
     device: "iphone-x",
@@ -127,12 +50,89 @@ var DeviceOptions = {
     width: 414,
     height: 896
   }),
-  ["iPhone SE"]: defineDevice({
-    device: "iphone8",
+  ["iPhone 12 Pro"]: defineDevice({
+    device: "iphone-x",
     colors: [],
     hasLandscape: true,
-    width: 375,
-    height: 667
+    width: 390,
+    height: 844
+  }),
+  ["Pixel 5"]: defineDevice({
+    device: "nexus5",
+    colors: [],
+    hasLandscape: true,
+    width: 393,
+    height: 851
+  }),
+  ["Samsung Galaxy S8+"]: defineDevice({
+    device: "note8",
+    colors: [],
+    hasLandscape: true,
+    width: 360,
+    height: 740
+  }),
+  ["Samsung Galaxy S20 Ultra"]: defineDevice({
+    device: "note8",
+    colors: [],
+    hasLandscape: true,
+    width: 412,
+    height: 915
+  }),
+  ["iPad Air"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 820,
+    height: 1180
+  }),
+  ["iPad Mini"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 768,
+    height: 1024
+  }),
+  ["Surface Pro 7"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 912,
+    height: 1368
+  }),
+  ["Surface Duo"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 540,
+    height: 720
+  }),
+  ["Galaxy Fold"]: defineDevice({
+    device: "note8",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 280,
+    height: 653
+  }),
+  ["Samsung Galaxy A51/71"]: defineDevice({
+    device: "note8",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 412,
+    height: 914
+  }),
+  ["Nest Hub"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 1024,
+    height: 600
+  }),
+  ["Nest Hub Max"]: defineDevice({
+    device: "ipad",
+    colors: ["black", "silver"],
+    hasLandscape: true,
+    width: 1280,
+    height: 800
   })
 };
 var DeviceNames = Object.keys(DeviceOptions);
